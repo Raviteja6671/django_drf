@@ -1,0 +1,11 @@
+from rest_framework import serializers
+from .models import Songs
+
+class SongsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Songs
+        fileds="__all__"
+
+class UsersSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=U
